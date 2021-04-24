@@ -1,0 +1,46 @@
+form{
+    background-color: #ffff;
+    h4{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    label{
+        font-size: 14px;
+        margin: 5px;
+        margin-top: 15px;
+    }
+    input{
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    textarea{
+        padding: 10px;
+        border-radius: 5px;
+        resize: none;
+    }
+    button{
+        margin: 20px 0;
+        padding: 10px 5px;
+        font-size: 20px;
+        border-radius: 50px;
+        background-color: $dark-color;
+        color: $light-color;
+    }
+}
+
+.Mapa-container{
+       iframe{
+           min-width: 320px;
+           max-width: 600px;
+           width: 100vw;
+           height: 450px;
+       }
+}

@@ -1,0 +1,301 @@
+/*****************COLORS**************** */
+header {
+  display: flex;
+  width: 100%;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  border-bottom: 1.5rem solid #23c1c1;
+  position: fixed;
+  z-index: 1;
+}
+header .navbar {
+  position: absolute;
+  top: 0;
+  left: -100vh;
+  bottom: 0;
+  margin: auto;
+  transition: 0.7s;
+}
+header .navbar-brand {
+  width: 5rem;
+  object-fit: cover;
+  margin: 0.7rem 5rem;
+}
+header .menu__list {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 80vw;
+  background-color: #196c84;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 5rem;
+}
+header .menu__list .nav-item {
+  align-content: left;
+  width: 90%;
+}
+header .menu__list img {
+  width: 45%;
+  margin: 50px 0;
+}
+header .menu__list a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 900;
+  height: 100%;
+  color: #FFFFFF;
+  transition: 0.9s;
+}
+header .menu__list a:hover {
+  color: #23c1c1;
+}
+header .menu__list a:visited {
+  padding: 2rem;
+  background-color: #23c1c1;
+  font-size: 2.5rem;
+  transition: 0.9s;
+  font-size: 2rem;
+  transition: 0.7s;
+  border-radius: 2rem;
+}
+header i {
+  color: #23c1c1;
+  font-size: 26px;
+  margin: auto 25px;
+}
+header .is-active {
+  left: 0;
+  transition-duration: 0.7s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto, sans-serif";
+  scroll-behavior: smooth;
+  background: white;
+  background: linear-gradient(180deg, white 0%, #32a2c1 100%);
+}
+
+section {
+  padding-top: 18rem;
+}
+
+.carousel {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/electric.jpg");
+  background: fixed no repeat 50% 50%;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.LaEmpresa {
+  font-size: 1.7rem;
+  margin: 1rem;
+  padding: 2rem;
+  line-height: 2.6rem;
+  text-align: justify;
+}
+
+.QuienesSomos {
+  display: flex;
+  flex-direction: column;
+}
+.QuienesSomos h5 {
+  font-size: 3rem;
+}
+.QuienesSomos p {
+  font-size: 1.7rem;
+  margin: 0.8rem;
+  line-height: 2.5rem;
+}
+.QuienesSomos .card {
+  width: 100%;
+  padding: 3rem;
+  text-align: justify;
+}
+.QuienesSomos .card img {
+  width: 100%;
+  margin: auto;
+}
+.QuienesSomos .mision {
+  background: #FFFFFF;
+}
+.QuienesSomos .vision {
+  background: #333333;
+  color: #FFFFFF;
+}
+
+.Servicios-wrapper {
+  background-color: #FFFFFF;
+  padding: 1.3rem;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow-x: auto;
+  font-size: 2rem;
+}
+.Servicios-wrapper .card-service {
+  background: grey;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  margin: 0 30px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.Servicios-wrapper .container-image {
+  width: 260px;
+  height: 260px;
+}
+.Servicios-wrapper a {
+  text-decoration: none;
+  color: #333333;
+  background-color: #23c1c1;
+  padding: 7px 14px;
+  font-weight: bolder;
+  border-radius: 5px;
+  position: relative;
+  top: 80px;
+  z-index: 0;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.Servicios-wrapper .card-service.dble a {
+  top: 50px;
+}
+
+.Contacto-container {
+  background-color: #0F5FB8;
+}
+
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+footer ul {
+  list-style: none;
+}
+
+@media (min-width: 780px) {
+  header .navbar {
+    left: 15vh;
+  }
+  header .menu__list {
+    background: none;
+    flex-direction: row;
+    height: -webkit-fill-available;
+    justify-content: space-evenly;
+  }
+  header .menu__list i, header .menu__list img {
+    display: none;
+  }
+  header .menu__list .nav-item {
+    align-content: center;
+    width: auto;
+  }
+  header .menu__list a {
+    color: #000000;
+  }
+  header .menu__list a:hover {
+    padding: 10px;
+    border: 2px solid #23c1c1;
+  }
+  header #btn-menu {
+    display: none;
+  }
+
+  body {
+    max-width: 2560px;
+    margin: auto;
+  }
+
+  .QuienesSomos {
+    flex-direction: row;
+  }
+
+  .Contacto-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Contacto-container .Formulario-container {
+    width: 100%;
+  }
+  .Contacto-container .Mapa-container {
+    margin: 100px;
+  }
+
+  .Servicios-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+}
+form {
+  background-color: #ffff;
+}
+form h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+.form-row label {
+  font-size: 14px;
+  margin: 5px;
+  margin-top: 15px;
+}
+.form-row input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.form-row textarea {
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+.form-row button {
+  margin: 20px 0;
+  padding: 10px 5px;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: #196c84;
+  color: #FFFFFF;
+}
+
+.Mapa-container iframe {
+  min-width: 320px;
+  max-width: 600px;
+  width: 100vw;
+  height: 450px;
+}

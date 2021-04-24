@@ -1,0 +1,55 @@
+@media (min-width: 780px) {
+    header{
+        .navbar{
+            left: 15vh;
+           
+        }
+        .menu__list{
+            background: none;
+            flex-direction: row;
+            height: -webkit-fill-available;
+            justify-content: space-evenly;
+            i, img{
+                display: none;
+            }
+            .nav-item{
+                align-content: center;
+                width: auto;
+            }
+            a{
+                color: #000000;
+    
+            }a:hover{
+                padding: 10px;
+                border: 2px solid $primary-color;
+            }
+        }
+        #btn-menu{
+            display: none;
+        }
+    }
+    body{
+        max-width: 2560px;
+        margin: auto;
+    }
+    .QuienesSomos{
+        flex-direction: row;
+    }
+    .Contacto-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .Formulario-container{
+            width: 100%;
+        }
+        .Mapa-container{
+            margin: 100px;
+        }
+    }
+    .Servicios-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+}
+
